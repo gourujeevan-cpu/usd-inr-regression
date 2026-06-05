@@ -1,0 +1,60 @@
+REDUCED (PARSIMONIOUS) MODEL — classical SE
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:          USDINR_Return   R-squared:                       0.284
+Model:                            OLS   Adj. R-squared:                  0.274
+Method:                 Least Squares   F-statistic:                     27.96
+Date:                Fri, 05 Jun 2026   Prob (F-statistic):           5.91e-11
+Time:                        00:05:51   Log-Likelihood:                -230.23
+No. Observations:                 144   AIC:                             466.5
+Df Residuals:                     141   BIC:                             475.4
+Df Model:                           2                                         
+Covariance Type:            nonrobust                                         
+====================================================================================
+                       coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------
+const                0.2988      0.105      2.843      0.005       0.091       0.507
+FPI_Flow            -0.0001   2.71e-05     -3.934      0.000      -0.000    -5.3e-05
+Broad_USD_Return     0.3305      0.067      4.920      0.000       0.198       0.463
+==============================================================================
+Omnibus:                       36.838   Durbin-Watson:                   2.301
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              113.790
+Skew:                          -0.935   Prob(JB):                     1.95e-25
+Kurtosis:                       6.933   Cond. No.                     4.21e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 4.21e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
+
+REDUCED MODEL — HAC robust SE
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:          USDINR_Return   R-squared:                       0.284
+Model:                            OLS   Adj. R-squared:                  0.274
+Method:                 Least Squares   F-statistic:                     24.02
+Date:                Fri, 05 Jun 2026   Prob (F-statistic):           1.06e-09
+Time:                        00:05:51   Log-Likelihood:                -230.23
+No. Observations:                 144   AIC:                             466.5
+Df Residuals:                     141   BIC:                             475.4
+Df Model:                           2                                         
+Covariance Type:                  HAC                                         
+====================================================================================
+                       coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------------
+const                0.2988      0.073      4.105      0.000       0.156       0.441
+FPI_Flow            -0.0001   2.81e-05     -3.795      0.000      -0.000   -5.15e-05
+Broad_USD_Return     0.3305      0.058      5.746      0.000       0.218       0.443
+==============================================================================
+Omnibus:                       36.838   Durbin-Watson:                   2.301
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              113.790
+Skew:                          -0.935   Prob(JB):                     1.95e-25
+Kurtosis:                       6.933   Cond. No.                     4.21e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity and autocorrelation robust (HAC) using 6 lags and without small sample correction
+[2] The condition number is large, 4.21e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.

@@ -1,0 +1,74 @@
+FULL MODEL — classical SE
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:          USDINR_Return   R-squared:                       0.333
+Model:                            OLS   Adj. R-squared:                  0.289
+Method:                 Least Squares   F-statistic:                     7.444
+Date:                Fri, 05 Jun 2026   Prob (F-statistic):           9.00e-09
+Time:                        00:05:51   Log-Likelihood:                -225.09
+No. Observations:                 144   AIC:                             470.2
+Df Residuals:                     134   BIC:                             499.9
+Df Model:                           9                                         
+Covariance Type:            nonrobust                                         
+==============================================================================================
+                                 coef    std err          t      P>|t|      [0.025      0.975]
+----------------------------------------------------------------------------------------------
+const                         -1.5442      0.972     -1.588      0.115      -3.468       0.379
+Oil_Return                     0.0218      0.010      2.129      0.035       0.002       0.042
+Gold_Return                   -0.0208      0.029     -0.724      0.471      -0.078       0.036
+Inflation_Differential         0.0074      0.058      0.127      0.899      -0.107       0.122
+Interest_Rate_Differential     0.1416      0.137      1.033      0.304      -0.130       0.413
+FPI_Flow                      -0.0001   3.28e-05     -3.957      0.000      -0.000   -6.49e-05
+Trade_Balance              -5.612e-05   2.64e-05     -2.123      0.036      -0.000   -3.84e-06
+FX_Reserves_Change          3.361e-05   1.81e-05      1.859      0.065   -2.15e-06    6.94e-05
+VIX                            0.0164      0.017      0.970      0.334      -0.017       0.050
+Broad_USD_Return               0.4218      0.097      4.336      0.000       0.229       0.614
+==============================================================================
+Omnibus:                       31.065   Durbin-Watson:                   2.286
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               81.974
+Skew:                          -0.831   Prob(JB):                     1.58e-18
+Kurtosis:                       6.302   Cond. No.                     1.66e+05
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.66e+05. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
+
+FULL MODEL — HAC (Newey-West, 6 lags) robust SE
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:          USDINR_Return   R-squared:                       0.333
+Model:                            OLS   Adj. R-squared:                  0.289
+Method:                 Least Squares   F-statistic:                     7.804
+Date:                Fri, 05 Jun 2026   Prob (F-statistic):           3.42e-09
+Time:                        00:05:51   Log-Likelihood:                -225.09
+No. Observations:                 144   AIC:                             470.2
+Df Residuals:                     134   BIC:                             499.9
+Df Model:                           9                                         
+Covariance Type:                  HAC                                         
+==============================================================================================
+                                 coef    std err          z      P>|z|      [0.025      0.975]
+----------------------------------------------------------------------------------------------
+const                         -1.5442      0.974     -1.585      0.113      -3.453       0.365
+Oil_Return                     0.0218      0.017      1.316      0.188      -0.011       0.054
+Gold_Return                   -0.0208      0.037     -0.563      0.573      -0.093       0.052
+Inflation_Differential         0.0074      0.055      0.133      0.894      -0.101       0.116
+Interest_Rate_Differential     0.1416      0.126      1.121      0.262      -0.106       0.389
+FPI_Flow                      -0.0001   3.45e-05     -3.762      0.000      -0.000   -6.22e-05
+Trade_Balance              -5.612e-05   2.72e-05     -2.064      0.039      -0.000   -2.83e-06
+FX_Reserves_Change          3.361e-05   1.58e-05      2.130      0.033    2.68e-06    6.45e-05
+VIX                            0.0164      0.010      1.582      0.114      -0.004       0.037
+Broad_USD_Return               0.4218      0.105      4.022      0.000       0.216       0.627
+==============================================================================
+Omnibus:                       31.065   Durbin-Watson:                   2.286
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               81.974
+Skew:                          -0.831   Prob(JB):                     1.58e-18
+Kurtosis:                       6.302   Cond. No.                     1.66e+05
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity and autocorrelation robust (HAC) using 6 lags and without small sample correction
+[2] The condition number is large, 1.66e+05. This might indicate that there are
+strong multicollinearity or other numerical problems.

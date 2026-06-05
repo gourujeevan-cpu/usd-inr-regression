@@ -1,0 +1,18 @@
+{
+  "Durbin-Watson": 2.301,
+  "Breusch-Godfrey_p": 0.3423,
+  "Breusch-Pagan_p": 0.8503,
+  "White_p": 0.9944,
+  "Jarque-Bera_p": 0.0,
+  "Ramsey_RESET_p": 0.4238,
+  "R2": 0.284,
+  "Adj_R2": 0.2738,
+  "F_pvalue": 5.907e-11,
+  "AIC": 466.45,
+  "BIC": 475.36,
+  "N": 144,
+  "Full_R2": 0.3333,
+  "Full_Adj_R2": 0.2885,
+  "Full_AIC": 470.18,
+  "Full_BIC": 499.88
+}

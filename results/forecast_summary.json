@@ -1,0 +1,6 @@
+{
+  "rw_rmse": 1.1934,
+  "best_nonrw": "ARIMA(1,0,1)",
+  "best_nonrw_ratio": 0.9599,
+  "best_model_overall": "ARIMA(1,0,1)"
+}

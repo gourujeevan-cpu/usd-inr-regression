@@ -1,0 +1,11 @@
+,coef,p_classical,p_HAC
+const,-1.5442,0.1147,0.1129
+Oil_Return,0.0218,0.0351,0.188
+Gold_Return,-0.0208,0.4706,0.5734
+Inflation_Differential,0.0074,0.899,0.8942
+Interest_Rate_Differential,0.1416,0.3037,0.2621
+FPI_Flow,-0.0001,0.0001,0.0002
+Trade_Balance,-0.0001,0.0356,0.039
+FX_Reserves_Change,0.0,0.0652,0.0332
+VIX,0.0164,0.3338,0.1136
+Broad_USD_Return,0.4218,0.0,0.0001

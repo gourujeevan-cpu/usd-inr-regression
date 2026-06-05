@@ -1,0 +1,9 @@
+model,level_RMSE_INR
+RW,0.917
+RW_drift,0.895
+AR1,0.894
+"ARIMA(1,0,1)",0.88
+OLS_lag2,0.915
+OLS_lagAll,1.044
+Ridge,0.995
+RandomForest,0.962

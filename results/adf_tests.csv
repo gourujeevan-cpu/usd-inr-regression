@@ -1,0 +1,11 @@
+variable,adf_stat,p_value,stationary_5pct
+USDINR_Return,-9.7903,0.0,YES
+Oil_Return,-7.8413,0.0,YES
+Gold_Return,-11.7295,0.0,YES
+Inflation_Differential,-2.5791,0.0974,NO
+Interest_Rate_Differential,-0.7699,0.8278,NO
+FPI_Flow,-5.1079,0.0,YES
+Trade_Balance,-0.5199,0.8881,NO
+FX_Reserves_Change,-7.8386,0.0,YES
+VIX,-5.2733,0.0,YES
+Broad_USD_Return,-7.5559,0.0,YES

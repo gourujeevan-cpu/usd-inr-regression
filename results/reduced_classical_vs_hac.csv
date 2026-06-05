@@ -1,0 +1,4 @@
+,coef,p_classical,p_HAC
+const,0.2988,0.0051,0.0
+FPI_Flow,-0.0001,0.0001,0.0001
+Broad_USD_Return,0.3305,0.0,0.0
